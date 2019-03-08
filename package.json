@@ -1,0 +1,23 @@
+{
+  "name": "google-drive-downloader",
+  "version": "1.0.0",
+  "description": "Downloads stuff from google drive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc; cp ./src/index.html ./dist/index.html; cp ./src/credentials.json ./dist/credentials.json; cp ./src/token.json ./dist/token.json; electron ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/snekfetch": "^4.0.1",
+    "Q": "^1.0.0",
+    "electron": "^4.0.4",
+    "googleapis": "^27.0.0",
+    "snekfetch": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^11.9.3",
+    "typescript": "^3.3.3"
+  }
+}
